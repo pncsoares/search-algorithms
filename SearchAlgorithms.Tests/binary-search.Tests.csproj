@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>BinarySearch.Tests</RootNamespace>
+    <RootNamespace>SearchAlgorithms.Tests</RootNamespace>
     <Nullable>enable</Nullable>
 
     <IsPackable>false</IsPackable>
@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BinarySearch\BinarySearch.csproj" />
+    <ProjectReference Include="..\SearchAlgorithms\SearchAlgorithms.csproj" />
   </ItemGroup>
 
 </Project>

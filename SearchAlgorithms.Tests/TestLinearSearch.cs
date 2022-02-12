@@ -1,63 +1,67 @@
 using NUnit.Framework;
 
-namespace BinarySearch.Tests;
+namespace SearchAlgorithms.Tests;
 
-public class BinarySearchTests
+public class LinearSearchTests
 {
+    private LinearSearch _sut { get; set; }
+
+    [SetUp]
+    public void Init()
+    {
+        _sut = new LinearSearch();
+    }
+
     [Test]
-    public void Test_BinarySearch_ExistingItem()
+    public void Test_LinearSearch_ExistingItem()
     {
         // Arrange
         var numbers = new int[] { 1, 5, 39, 0, 21, 3, 2, 38 };
         var itemToFind = 3;
 
         // Act
-        var sut = new ArraySearch();
-        var itemIndex = sut.BinarySearch(numbers, itemToFind);
+        var itemIndex = this._sut.Search(numbers, itemToFind);
 
         // Assert
         Assert.AreEqual(5, itemIndex);
     }
 
     [Test]
-    public void Test_BinarySearch_NotExistingItem()
+    public void Test_LinearSearch_NotExistingItem()
     {
         // Arrange
         var numbers = new int[] { 1, 5, 39, 0, 21, 3, 2, 38 };
         var itemToFind = 50;
 
         // Act
-        var sut = new ArraySearch();
-        var itemIndex = sut.BinarySearch(numbers, itemToFind);
+        var itemIndex = this._sut.Search(numbers, itemToFind);
 
         // Assert
         Assert.AreEqual(-1, itemIndex);
     }
 
     [Test]
-    public void Test_BinarySearch_EmptyArray()
+    public void Test_LinearSearch_EmptyArray()
     {
         // Arrange
         int[] numbers = new int[] {};
         var itemToFind = 50;
 
         // Act
-        var sut = new ArraySearch();
-        var itemIndex = sut.BinarySearch(numbers, itemToFind);
+        var itemIndex = this._sut.Search(numbers, itemToFind);
 
         // Assert
         Assert.AreEqual(-1, itemIndex);
     }
 
     [Test]
-    public void Test_BinarySearch_NullArray()
+    public void Test_LinearSearch_NullArray()
     {
         // Arrange
         var itemToFind = 50;
 
         // Act
-        var sut = new ArraySearch();
-        var itemIndex = sut.BinarySearch(null, itemToFind);
+        var itemIndex = this._sut.Search(null, itemToFind);
 
         // Assert
         Assert.AreEqual(-1, itemIndex);
