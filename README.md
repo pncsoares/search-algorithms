@@ -1,6 +1,6 @@
 # Search algorithms in C#
 
-This repository aims to create search algorithms in C#.
+This repository aims to demonstrate search algorithms in C#.
 
 # Technologies
 
@@ -21,13 +21,13 @@ Create and go to the directory where you want to place the repository
 Clone the project
 
 ```bash
-  git clone PUT_ADDRESS_HERE
+  git clone https://github.com/pncsoares/search-algorithms.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd binary-search
+  cd search-algorithms
 ```
 
 Open in Visual Studio Code
