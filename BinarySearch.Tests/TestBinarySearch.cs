@@ -53,12 +53,11 @@ public class BinarySearchTests
     public void Test_BinarySearch_NullArray()
     {
         // Arrange
-        int[] numbers = null;
         var itemToFind = 50;
 
         // Act
         var sut = new ArraySearch();
-        var itemIndex = sut.BinarySearch(numbers, itemToFind);
+        var itemIndex = sut.BinarySearch(null, itemToFind);
 
         // Assert
         Assert.AreEqual(-1, itemIndex);

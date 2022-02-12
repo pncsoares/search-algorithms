@@ -53,12 +53,11 @@ public class LinearSearchTests
     public void Test_LinearSearch_NullArray()
     {
         // Arrange
-        int[] numbers = null;
         var itemToFind = 50;
 
         // Act
         var sut = new ArraySearch();
-        var itemIndex = sut.LinearSearch(numbers, itemToFind);
+        var itemIndex = sut.LinearSearch(null, itemToFind);
 
         // Assert
         Assert.AreEqual(-1, itemIndex);
