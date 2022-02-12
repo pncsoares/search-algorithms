@@ -1,4 +1,4 @@
-# Binary Search in C#
+# Search algorithms in C#
 
 This repository aims to create search algorithms in C#.
 
