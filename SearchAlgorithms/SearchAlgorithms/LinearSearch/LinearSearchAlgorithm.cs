@@ -1,8 +1,8 @@
 ﻿using SearchAlgorithms.Interfaces;
 
-namespace SearchAlgorithms;
+namespace SearchAlgorithms.LinearSearch;
 
-public class LinearSearch : IArraySearch
+public class LinearSearchAlgorithm : IArraySearch
 {
     public int Search(int[] array, int item)
     {

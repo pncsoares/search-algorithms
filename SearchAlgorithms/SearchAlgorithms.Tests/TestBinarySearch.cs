@@ -1,10 +1,11 @@
 using NUnit.Framework;
+using SearchAlgorithms.BinarySearch;
 
 namespace SearchAlgorithms.Tests;
 
 public class BinarySearchTests
 {
-    private readonly BinarySearch _sut = new BinarySearch();
+    private readonly BinarySearchAlgorithm _sut = new BinarySearchAlgorithm();
 
     [Test]
     public void Test_BinarySearch_ExistingItem()

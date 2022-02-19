@@ -1,10 +1,11 @@
 using NUnit.Framework;
+using SearchAlgorithms.LinearSearch;
 
 namespace SearchAlgorithms.Tests;
 
 public class LinearSearchTests
 {
-    private readonly LinearSearch _sut = new LinearSearch();
+    private readonly LinearSearchAlgorithm _sut = new LinearSearchAlgorithm();
 
     [Test]
     public void Test_LinearSearch_ExistingItem()
