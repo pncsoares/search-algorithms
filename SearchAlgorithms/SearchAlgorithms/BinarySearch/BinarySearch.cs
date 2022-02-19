@@ -1,3 +1,5 @@
+using SearchAlgorithms.Interfaces;
+
 namespace SearchAlgorithms;
 
 public class BinarySearch : IArraySearch

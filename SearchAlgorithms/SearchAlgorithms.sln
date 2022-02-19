@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchAlgorithms", "SearchAlgorithms\SearchAlgorithms.csproj", "{24119C20-748D-4A94-BFF7-07B6546F6E06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchAlgorithms.Tests", "SearchAlgorithms.Tests\SearchAlgorithms.Tests.csproj", "{4805DA75-EAF7-455D-84AD-C13EB368353A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24119C20-748D-4A94-BFF7-07B6546F6E06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24119C20-748D-4A94-BFF7-07B6546F6E06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24119C20-748D-4A94-BFF7-07B6546F6E06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24119C20-748D-4A94-BFF7-07B6546F6E06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4805DA75-EAF7-455D-84AD-C13EB368353A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4805DA75-EAF7-455D-84AD-C13EB368353A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4805DA75-EAF7-455D-84AD-C13EB368353A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4805DA75-EAF7-455D-84AD-C13EB368353A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

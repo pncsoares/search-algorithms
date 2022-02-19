@@ -1,4 +1,6 @@
-﻿namespace SearchAlgorithms;
+﻿using SearchAlgorithms.Interfaces;
+
+namespace SearchAlgorithms;
 
 public class LinearSearch : IArraySearch
 {

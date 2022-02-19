@@ -1,4 +1,4 @@
-namespace SearchAlgorithms;
+namespace SearchAlgorithms.Interfaces;
 
 public interface IArraySearch
 {
