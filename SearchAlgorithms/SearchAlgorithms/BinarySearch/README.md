@@ -1,6 +1,6 @@
-## Binary search
+# Binary search
 
-### How binary search works
+## How binary search works
 
 > **_NOTE:_** The array must be ordered otherwise you'll not be able to apply this algorithm. If it's not, you must order it using f.e.: `Array.Sort`
 
