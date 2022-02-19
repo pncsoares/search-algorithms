@@ -2,7 +2,7 @@
 
 This repository aims to demonstrate search algorithms in multiple languages.
 
-# Which types of earch algorithms exists?
+# Which types of search algorithms exists?
 
 ## With code examples
 
