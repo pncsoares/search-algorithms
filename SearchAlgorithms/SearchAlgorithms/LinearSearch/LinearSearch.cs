@@ -11,7 +11,7 @@ public class LinearSearch : IArraySearch
             return -1;
         }
 
-        for (int i = 0; i < array.Length; i++)
+        for (var i = 0; i < array.Length; i++)
         {
             if (array[i] == item)
             {

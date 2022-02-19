@@ -4,20 +4,14 @@ namespace SearchAlgorithms.Tests;
 
 public class LinearSearchTests
 {
-    private LinearSearch _sut { get; set; }
-
-    [SetUp]
-    public void Init()
-    {
-        _sut = new LinearSearch();
-    }
+    private readonly LinearSearch _sut = new LinearSearch();
 
     [Test]
     public void Test_LinearSearch_ExistingItem()
     {
         // Arrange
-        var numbers = new int[] { 1, 5, 39, 0, 21, 3, 2, 38 };
-        var itemToFind = 3;
+        var numbers = new[] { 1, 5, 39, 0, 21, 3, 2, 38 };
+        const int itemToFind = 3;
 
         // Act
         var itemIndex = this._sut.Search(numbers, itemToFind);
@@ -30,8 +24,8 @@ public class LinearSearchTests
     public void Test_LinearSearch_NotExistingItem()
     {
         // Arrange
-        var numbers = new int[] { 1, 5, 39, 0, 21, 3, 2, 38 };
-        var itemToFind = 50;
+        var numbers = new[] { 1, 5, 39, 0, 21, 3, 2, 38 };
+        const int itemToFind = 50;
 
         // Act
         var itemIndex = this._sut.Search(numbers, itemToFind);
@@ -44,8 +38,8 @@ public class LinearSearchTests
     public void Test_LinearSearch_EmptyArray()
     {
         // Arrange
-        int[] numbers = new int[] {};
-        var itemToFind = 50;
+        var numbers = System.Array.Empty<int>();
+        const int itemToFind = 50;
 
         // Act
         var itemIndex = this._sut.Search(numbers, itemToFind);
@@ -58,7 +52,7 @@ public class LinearSearchTests
     public void Test_LinearSearch_NullArray()
     {
         // Arrange
-        var itemToFind = 50;
+        const int itemToFind = 50;
 
         // Act
         var itemIndex = this._sut.Search(null, itemToFind);
